@@ -1,5 +1,6 @@
 <template>
     <div>
+        <stickyNav v-if="enableStickyNav" />
         <hero></hero>
         <basic-elements></basic-elements>
         <inputs></inputs>
@@ -12,7 +13,9 @@
         <carousel></carousel>
     </div>
 </template>
+
 <script>
+import StickyNav from '../layout/StickyHeader';
 import Hero from "./components/Hero";
 import BasicElements from "./components/BasicElements";
 import Inputs from "./components/Inputs";
@@ -27,6 +30,7 @@ import DownloadSection from "./components/DownloadSection";
 export default {
   name: "components",
   components: {
+    StickyNav,
     Hero,
     BasicElements,
     Inputs,
@@ -37,6 +41,32 @@ export default {
     Icons,
     Examples,
     DownloadSection
-  }
+  },
+  data() {
+        return {
+        enableStickyNav: null
+        }
+    },
+    mounted() {
+        // console.log('Index page created')
+        // console.log('Sticky Nav mounted')
+        window.addEventListener('scroll', this.handleNavDisplay)
+    },
+    // created() {},
+    destroyed() {
+        window.addEventListener('scroll', this.handleNavDisplay)
+    },
+    methods: {
+        handleNavDisplay() {
+        var y = window.scrollY
+        if (y > 100 && !this.enableStickyNav) {
+            // console.log ('Display New Menu')
+            this.enableStickyNav = true
+        } else if (y < 100 && this.enableStickyNav) {
+            // console.log('Hide sticky Nav')
+            this.enableStickyNav = false
+        }
+        }
+    }
 };
 </script>

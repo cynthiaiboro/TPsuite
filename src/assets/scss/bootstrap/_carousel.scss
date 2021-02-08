@@ -83,6 +83,7 @@
   .carousel-item-next.carousel-item-left,
   .carousel-item-prev.carousel-item-right {
     opacity: 1;
+    
   }
 
   .active.carousel-item-left,
@@ -119,8 +120,14 @@
   justify-content: center; // 3. horizontally center contents
   width: $carousel-control-width;
   color: $carousel-control-color;
-  text-align: center;
   opacity: $carousel-control-opacity;
+  height:40px;
+  width:40px;
+  padding:12px;
+  top:50%;
+  bottom: auto; 
+  transform:translateY(-50%);
+  background-color:  $light-blue;
   // We can't have a transition here because WebKit cancels the carousel
   // animation if you trip this while in the middle of another animation.
 
@@ -232,5 +239,4 @@
   padding-top: 20px;
   padding-bottom: 20px;
   color: $carousel-caption-color;
-  text-align: center;
 }

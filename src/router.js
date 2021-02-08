@@ -15,19 +15,19 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "components",
+      name: "landing",
       components: {
         header: AppHeader,
-        default: Components,
+        default: Landing,
         footer: AppFooter
       }
     },
     {
       path: "/landing",
-      name: "landing",
+      name: "components",
       components: {
         header: AppHeader,
-        default: Landing,
+        default: Components,
         footer: AppFooter
       }
     },
