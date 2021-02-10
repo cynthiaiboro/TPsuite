@@ -2,16 +2,14 @@
     <div>
         <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
-            <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
-                <!-- <img src="img/brand/white.png" alt="logo"> -->
-                <h2 class="text-white text-bold">TopUp Box</h2>
+            <router-link slot="brand" class="" to="/">
+                <img src="img/brand/blue-logo.png" alt="logo" class="img-fluid" width="180px">
             </router-link>
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
                     <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/">
-                        <!-- <img src="img/brand/blue.png"> -->
-                        TopUp Box
+                        <img src="img/brand/blue-logo.png" alt="logo" class="img-fluid" width="120px">
                     </a>
                 </div>
                 <div class="col-6 collapse-close">
@@ -25,40 +23,37 @@
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text">Products</span>
                     </a>
-                    <router-link to="/" class="dropdown-item">Enterprise</router-link>
-                    <router-link to="/" class="dropdown-item">Custom Page</router-link>
-                    <router-link to="/" class="dropdown-item">Mobile</router-link>
-                    <router-link to="/" class="dropdown-item">USSD</router-link>
-                    <router-link to="/" class="dropdown-item">Unicard</router-link>
-                    <router-link to="/" class="dropdown-item">API</router-link>
+                    <router-link to="/component" class="dropdown-item">Enterprise</router-link>
+                    <router-link to="/component" class="dropdown-item">Custom Page</router-link>
+                    <router-link to="/component" class="dropdown-item">Mobile</router-link>
+                    <router-link to="/component" class="dropdown-item">USSD</router-link>
+                    <router-link to="/component" class="dropdown-item">Unicard</router-link>
+                    <router-link to="/component" class="dropdown-item">API</router-link>
                 </base-dropdown>
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link nav-link-icon" data-toggle="dropdown" role="button">
                         <i class="ni ni-ui-04 d-lg-none"></i>
                         <span class="nav-link-inner--text">TopUp Now</span>
                     </a>
-                    <router-link to="/" class="dropdown-item">Airtime</router-link>
-                    <router-link to="/" class="dropdown-item">Electricity</router-link>
-                    <router-link to="/" class="dropdown-item">Cable</router-link>
-                    <router-link to="/" class="dropdown-item">Fund Wallet</router-link>
+                    <router-link to="/component" class="dropdown-item">Airtime</router-link>
+                    <router-link to="/component" class="dropdown-item">Electricity</router-link>
+                    <router-link to="/component" class="dropdown-item">Cable</router-link>
+                    <router-link to="/component" class="dropdown-item">Fund Wallet</router-link>
                 </base-dropdown>
                 <li class="nav-item">
-                    <router-link to="/landing" class="nav-link nav-link-icon">Pricing</router-link>
+                    <router-link to="/landing" class="nav-link nav-link-inner--text">Pricing</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial"
+                    <a class="nav-link nav-link-inner--text" href="https://www.instagram.com/creativetimofficial"
                        target="_blank" rel="noopener" data-toggle="tooltip">
                         Developers
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" rel="noopener"
-                       data-toggle="tooltip">
-                        Use Cases
-                    </a>
+                    <router-link to="/landing" class="nav-link nav-link-inner--text">Use Cases</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/vue-argon-design-system"
+                    <a class="nav-link nav-link-inner--text" href="https://github.com/creativetimofficial/vue-argon-design-system"
                        target="_blank" rel="noopener" data-toggle="tooltip">
                         Learn
                     </a>
@@ -68,7 +63,7 @@
                        class="btn btn-neutral btn-icon">
                     <span class="btn-inner--icon">
                     </span>
-                        <span class="nav-link-inner--text">Get Started</span>
+                        <span class="">Get Started</span>
                     </a>
                 </li>
             </ul>

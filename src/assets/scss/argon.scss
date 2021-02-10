@@ -99,11 +99,37 @@
 @import "custom/vendor/headroom.scss";
 @import "custom/vendor/nouislider.scss";
 
-.airtime-slide {
-  background-image: url("../../../public/img/theme/img-1-1200x1000.jpg");
+
+.airtime-slide, .electricity-slide, .cable-slide, .fund-slide {
   padding: 25% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
+.airtime-slide {
+  background-image: url("../../../public/img/theme/slide2.png");
+}
+.electricity-slide {
+  background-image: url("../../../public/img/theme/slide2.png");
+}
+.cable-slide {
+  background-image: url("../../../public/img/theme/cable.png");
+}
+.fund-slide {
+  background-image: url("../../../public/img/theme/wallet.png");
+}
+.footer-bg {
+  background-color: $footer-bg;
+}
+.slide {
+  padding: 8vh 0px;
+}
+.nav-link-inner--text {
+  color: $default !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -137,8 +163,8 @@ input[type=number] {
 
 #myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
 #myCarousel .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;} 
-#myCarousel .carousel-item a{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
-#myCarousel .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; height:auto; max-width:100%;}
+.action-btn{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
+#myCarousel img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; height:auto; max-width:100%;}
 #myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel .carousel-item .mask img{-webkit-animation-duration: 1s;
     animation-duration: 1.2s;
     -webkit-animation-fill-mode: both;

@@ -16,7 +16,8 @@
 
     .footer-text-link {
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 600;
+        color: $default;
     }
 
     .nav .nav-item .nav-link,
@@ -49,7 +50,9 @@
         color: $white;
     }
 }
-
+.footer-header {
+    font-weight: 800;
+}
 .footer.has-cards {
     overflow: hidden;
     padding-top: 500px;

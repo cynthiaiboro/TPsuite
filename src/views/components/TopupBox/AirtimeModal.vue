@@ -1,6 +1,6 @@
 <template>
     <div>
-        <base-button block type="info" class=" mb-3" @click="modals.modal3 = true">
+        <base-button block type="primary" class=" mb-3" @click="modals.modal3 = true">
             TopUp
         </base-button>
 
@@ -12,41 +12,28 @@
                     body-classes="px-lg-5 py-lg-5"
                     class="border-0">
                 <template>
-                    <div class="text-muted text-center mb-3">
-                        <small>Sign in with</small>
-                    </div>
-                    <div class="btn-wrapper text-center">
-                        <base-button type="neutral">
-                            <img slot="icon" src="img/icons/common/github.svg">
-                            Github
-                        </base-button>
-
-                        <base-button type="neutral">
-                            <img slot="icon" src="img/icons/common/google.svg">
-                            Google
-                        </base-button>
-                    </div>
-                </template>
-                <template>
                     <div class="text-center text-muted mb-4">
-                        <small>Or sign in with credentials</small>
+                        <small>Buy Airtime</small>
                     </div>
                     <form role="form">
                         <base-input alternative
                                     class="mb-3"
-                                    placeholder="Email"
-                                    addon-left-icon="ni ni-email-83">
+                                    placeholder="Phone number"
+                                    addon-left-icon="ni ni-phone">
                         </base-input>
                         <base-input alternative
-                                    type="password"
-                                    placeholder="Password"
-                                    addon-left-icon="ni ni-lock-circle-open">
+                                    class="mb-3"
+                                    type="select"
+                                    placeholder="Network"
+                                    addon-left-icon="ni ni-phone">
                         </base-input>
-                        <base-checkbox>
-                            Remember me
-                        </base-checkbox>
+                        <base-input alternative
+                                    type="number"
+                                    placeholder="Amount"
+                                    addon-left-icon="ni ni-money">
+                        </base-input>
                         <div class="text-center">
-                            <base-button type="primary" class="my-4">Sign In</base-button>
+                            <base-button type="primary" class="my-4">Topup</base-button>
                         </div>
                     </form>
                 </template>

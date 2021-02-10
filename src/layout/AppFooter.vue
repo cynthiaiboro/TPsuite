@@ -6,12 +6,13 @@
                 <card gradient="primary"
                       no-body
                       shadow-size="lg"
-                      class="border-0 floating">
+                      class="border-0 floating"
+                      data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     <div class="p-5">
                         <div class="row align-items-center">
                             <div class="col-lg-8">
-                                <h3 class="text-white">Experience TopUp Box</h3>
-                                <p class="lead text-white mt-3">Join over 3,000,000 people who spend, send, receive, save and borrow money with just their phone number.</p>
+                                <h3 class="text-white">Get Started Now</h3>
+                                <p class="lead text-white mt-3">Begin to enoy our variety of services hassle free and from the comfort of your homes!</p>
                             </div>
                             <div class="col-lg-3 ml-lg-auto">
                                 <base-button tag="a" href="https://www.creative-tim.com/product/vue-argon-design-system"
@@ -26,49 +27,21 @@
            </section>
         </div>
         <div class="container">
-            <!-- <div class="row row-grid align-items-center my-md">
-                <div class="col-lg-6">
-                    <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
-                    <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
-                </div>
-                <div class="col-lg-6 text-lg-center btn-wrapper">
-                    <a target="_blank" rel="noopener" href="https://twitter.com/creativetim"
-                       class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" data-toggle="tooltip"
-                       data-original-title="Follow us">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a target="_blank" rel="noopener" href="https://www.facebook.com/creativetim"
-                       class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip"
-                       data-original-title="Like us">
-                        <i class="fa fa-facebook-square"></i>
-                    </a>
-                    <a target="_blank" rel="noopener" href="https://dribbble.com/creativetim"
-                       class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" data-toggle="tooltip"
-                       data-original-title="Follow us">
-                        <i class="fa fa-dribbble"></i>
-                    </a>
-                    <a target="_blank" rel="noopener" href="https://github.com/creativetimofficial"
-                       class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" data-toggle="tooltip"
-                       data-original-title="Star on Github">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </div>
-            </div> -->
             <div class="footerBg">
                 <section id="footer">
                 <div class="container">
                     <div class="row mb-5">
-                    <div class="col-md-4 col-sm-12 footer-jiggle-head mb-4">
+                    <div class="col-md-4 col-sm-12 mb-4">
                         <router-link slot="brand" class="mr-lg-5" to="/">
-                            <img src="img/brand/blue-logo.jpg" alt="logo" height="100px" width="300px">
+                            <img src="img/brand/blue-logo.png" alt="logo" class="img-fluid" width="180px">
                         </router-link>
                     
                         <div class="mt-4">
-                            <base-button tag="a" href="#" type="info" icon="fa fa-twitter" rounded
+                            <base-button tag="a" href="#" icon="fa fa-twitter" rounded
                                 icon-only></base-button>
-                            <base-button tag="a" href="#" type="primary" icon="fa fa-facebook" rounded
+                            <base-button tag="a" href="#" icon="fa fa-facebook" rounded
                                 icon-only></base-button>
-                            <base-button tag="a" href="#" type="danger" icon="fa fa-instagram" rounded
+                            <base-button tag="a" href="#" icon="fa fa-instagram" rounded
                                 icon-only></base-button>
                         </div>
 
@@ -76,7 +49,7 @@
                     </div>
                     <div class="col-md-6 col-xs-12 py-4">
                         <div class="row">
-                        <div class="col-xs-6 col-6 footer-jiggle">
+                        <div class="col-xs-6 col-6">
                             <!-- Product -->
                             <h6 class="mb-4 footer-header">
                             <span>PRODUCTS</span>
@@ -102,7 +75,7 @@
                             
 
                         </div>
-                        <div class="col-xs-6 col-6 footer-jiggle">
+                        <div class="col-xs-6 col-6">
                             <h6 class="mb-4 footer-header">
                             <span>RESOURCES</span>
                             </h6>
@@ -129,7 +102,7 @@
                     </div>
                     <div class="col-md-2 col-xs-12 mb-4 py-4">
                         <div class="row">
-                        <div class="col-xs-6 col-12 footer-jiggle">
+                        <div class="col-xs-6 col-12">
                             <h6 class="mb-4 footer-header">
                             <span>LEGAL</span>
                             </h6>
@@ -142,10 +115,10 @@
                             <p class="my-3">
                             <router-link to="/" class="footer-text-link">Guidelines</router-link>
                             </p>
-                            <p class="my-3 footer-text-link text-primary">
+                            <p class="my-3 footer-text-link">
                             support@topupbox.com
                             </p>
-                            <p class="my-3 footer-text-link text-primary">
+                            <p class="my-3 footer-text-link">
                             +234 800 0000 000
                             </p>
 
@@ -162,7 +135,7 @@
                 <div class="col-md-6">
                     <div class="copyright">
                         &copy; {{year}}
-                        <a href="https://www.creative-tim.com" target="_blank" rel="noopener">TopUp Box.</a> All Right Reserved
+                        <a href="https://www.creative-tim.com" target="_blank" rel="noopener">TopupBox.</a> All Right Reserved
                     </div>
                 </div>
                 <div class="col-md-6">
