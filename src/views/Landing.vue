@@ -1,7 +1,7 @@
 <template>
     <div>
         <stickyNav v-if="enableStickyNav" />
-         <div class="position-relative">
+         <div>
             <!-- shape Hero -->
             <section class="section-shaped my-0">
                 <div class="shape shape-style-1 shape-landing shape-skew">
@@ -22,15 +22,15 @@
                                 controls
                                 fade>
                         <!-- Text slides with image -->
-                        <b-carousel-slide>
+                        <!-- <b-carousel-slide> -->
                             <div class="container">
                                 <div class="row mb-5">
                                     <div class="col-md-7 col-12 mt-5">
-                                        <h4 class="text-default">AIRTIME</h4>
-                                        <p  class="text-default">Buy Airtime and make instant payment for yourself, friends and family.
-                                           All you have to do is simply put in the beneficiary number below</p>
-                                        <div class="row mt-5" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                                            <div class="col-md-8 col-12">
+                                        <h4 class="text-default" data-aos="fade-right" data-aos-delay="800" data-aos-easing="ease-out-cubic" data-aos-duration="1000">PAYMENTS MADE EASY</h4>
+                                        <p  class="text-default" data-aos="fade-right" data-aos-delay="1100" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Buy airtime, pay for your cable and clectricity bills and fund your wallet with our topup quick service.
+                                           All at a go and make direct payment instantly. It's just too easy.</p>
+                                        <div class="row mt-5" >
+                                            <div class="col-md-8 col-12" data-aos-delay="1400" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                                                 <base-input alternative
                                                 placeholder="Phone number"
                                                 type="number"
@@ -38,7 +38,7 @@
                                                 >
                                                 </base-input>
                                             </div>
-                                            <div class="col-md-4 col-12 action-btn">
+                                            <div class="col-md-4 col-12">
                                                 <airtime-modal />
                                             </div>
                                         </div>
@@ -54,15 +54,15 @@
                                 </div>
                                 
                             </div>
-                        </b-carousel-slide>
-                        <b-carousel-slide>
+                        <!-- </b-carousel-slide> -->
+                        <!-- <b-carousel-slide >
                             <div class="container">
                                 <div class="row mb-5">
-                                    <div class="col-md-7 col-12 mt-5">
+                                    <div class="col-md-7 col-12 mt-5 order-md-1 order-2">
                                         <h4 class="text-default">CABLE</h4>
                                         <p  class="text-default">With our simplified payment, subscribe to your favourite cable station.
                                           Fill in your cable number and you're good to go.</p>
-                                        <div class="row mt-5" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                                        <div class="row mt-5">
                                             <div class="col-md-8 col-12">
                                                 <base-input alternative
                                                 placeholder="Cable number"
@@ -71,66 +71,13 @@
                                                 >
                                                 </base-input>
                                             </div>
-                                            <div class="col-md-4 col-12 action-btn">
+                                            <div class="col-md-4 col-12">
                                                 <airtime-modal />
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-5 col-12 mb-5 floating pl-5" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                                    <div class="col-md-5 col-12 mb-5 pl-5">
                                         <img src="img/theme/why-us.png" class="mx-auto" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-                        </b-carousel-slide>
-                        <!-- <b-carousel-slide class="electricity-slide">
-                            <div class="container">
-                                <div class="row mb-5">
-                                    <div class="col-md-7 col-12 order-md-1 order-2">
-                                        <h4>ELECTRICTY</h4>
-                                        <p>Why should bills payment be a hassle?
-                                            Simply buy and pay for your electricity needs now!
-                                        </p>
-                                        <div class="row mt-5">
-                                            <div class="col-md-8 col-12">
-                                                <base-input alternative
-                                                placeholder="Meter number"
-                                                type="number"
-                                                >
-                                                </base-input>
-                                            </div>
-                                            <div class="col-md-4 col-12 action-btn">
-                                                <airtime-modal />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-12 order-md-2 order-1 mb-5"><img src="img/theme/light.png" class="mx-auto" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-                        </b-carousel-slide>
-                        <b-carousel-slide class="fund-slide">
-                            <div class="container">
-                                <div class="row mb-5">
-                                    <div class="col-md-7 col-12 order-md-1 order-2">
-                                        <h4>FUND WALLET</h4>
-                                        <p>Need to Fund your wallet?
-                                           Fill in your mobile number and proceed.
-                                           It's as easy as can be!
-                                        </p>
-                                        <div class="row mt-5">
-                                            <div class="col-md-8 col-12">
-                                                <base-input alternative
-                                                placeholder="Wallet number"
-                                                type="number"
-                                                >
-                                                </base-input>
-                                            </div>
-                                            <div class="col-md-4 col-12 action-btn">
-                                                <airtime-modal />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-12 mb-5"><img src="img/theme/hero-wallet.png" class="mx-auto" alt="slide">
                                     </div>
                                 </div>
                             </div>
@@ -151,7 +98,7 @@
                 </div> -->
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-12">
-                        <div class="row row-grid" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                        <div class="row row-grid" data-aos="fade-up" data-aos-delay="2000" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                             <div class="col-lg-4">
                                 <card class="border-0" hover shadow body-classes="py-5 text-center">
                                     <icon name="ni ni-check-bold" size="lg" type="primary" shadow class="mb-4">
@@ -301,43 +248,57 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="section bg-secondary">
+        <section class="section bg-secondary">
             <div class="container">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6">
-                        <div class="card bg-default shadow border-0">
-                            <img v-lazy="'img/theme/img-1-1200x1000.jpg'" class="card-img-top">
+                        <div class="card bg-light shadow border-0">
+                            <code>
+                              <pre>
+                                   # import package
+                                    import africastalking
+
+                                    #initialize SDK
+                                    username = "YOUR_USERNAME"
+
+                                    # Initialize a service e.g. airtime
+                                    airtime = africastalking.AIRTIME
+
+                                    # Use the service synchronously
+                                    response = airtime.send([{
+                                        phoneNumber: "+2547XXXXXXXX",
+                                        amount: "KES 200"
+                                    }])
+
+                                    print(response)
+                              </pre>
+                            </code>
                             <blockquote class="card-blockquote">
                                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
                                      class="svg-bg">
                                     <polygon points="0,52 583,95 0,95" class="fill-default"></polygon>
                                     <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"></polygon>
                                 </svg>
-                                <h4 class="display-3 font-weight-bold text-white">Design System</h4>
-                                <p class="lead text-italic text-white">The Arctic Ocean freezes every winter and much of
-                                    the sea-ice then thaws every summer, and that process will continue whatever
-                                    happens.</p>
+
                             </blockquote>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="pl-md-5">
-                            <icon name="ni ni-settings" class="mb-5" size="lg" type="warning" shadow rounded></icon>
+                            <icon name="ni ni-settings" class="mb-5" size="lg" type="default" shadow rounded></icon>
 
-                            <h3>Our customers</h3>
-                            <p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.
-                                Just make sure you enable them first via JavaScript.</p>
-                            <p>The kit comes with three pre-built pages to help you get started faster. You can change
-                                the text and images and you're good to go.</p>
-                            <p>The kit comes with three pre-built pages to help you get started faster. You can change
-                                the text and images and you're good to go.</p>
-                            <a href="#" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful
-                                websites</a>
+                            <h3>Learn and Build</h3>
+                            <p class="lead">Developers' Guide</p>
+                            <p>We have documented a set of developer tools that will make it easier for you to learn how to work with our APIs. These resources will help you build faster and test your applications before you deploy them to your users.</p>
+                            <base-button tag="a" href="#" type="default" class="mt-4">
+                                Learn more
+                            </base-button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
+
         <section class="section section section-shaped my-0 overflow-hidden">
             <div class="shape shape-style-1 bg-gradient-primary shape-skew">
                 <span></span>
@@ -365,7 +326,7 @@
                                 <!-- <p class="text-white">We are the best in our field and here's why</p> -->
                             </div>
                         </div>
-                        <card shadow class="shadow-lg--hover mt-5">
+                        <card shadow class="shadow-lg--hover mt-5" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                             <div class="d-flex px-3">
                                 <div>
                                     <icon name="ni ni-bulb-61" gradient="info" color="white" shadow
@@ -378,7 +339,7 @@
                                 </div>
                             </div>
                         </card>
-                        <card shadow class="shadow-lg--hover mt-5">
+                        <card shadow class="shadow-lg--hover mt-5" data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                             <div class="d-flex px-3">
                                 <div>
                                     <icon name="ni ni-briefcase-24" gradient="info" color="white" shadow
@@ -405,10 +366,10 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="px-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="800" data-aos-duration="1000">
+                        <div class="px-2" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="100" data-aos-duration="1000">
                             <img v-lazy="'img/icons/common/mobile.svg'"
                                  class="img-center img-fluid shadow-lg-hover"
-                                 style="width: 150px;">
+                                 style="width: 100px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
                                     <span class="d-block mb-1">Mobile App</span>
@@ -418,23 +379,23 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="px-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="1000" data-aos-duration="1000">
+                        <div class="px-2" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="300" data-aos-duration="1000">
                             <img v-lazy="'img/icons/common/laptop.svg'"
                                  class="img-center img-fluid shadow-lg-hover"
-                                 style="width: 150px;">
+                                 style="width: 100px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
                                     <span class="d-block mb-1">Web App</span>
-                                    <small class="h6 text-muted">Available at <a href="#">topupbox.com</a></small>
+                                    <small class="h6 text-muted">Available at <br /><a href="#">topupbox.com</a></small>
                                 </h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="px-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="1200" data-aos-duration="1000">
+                        <div class="px-2" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="500" data-aos-duration="1000">
                             <img v-lazy="'img/icons/common/ussd.svg'"
                                  class="img-center img-fluid shadow-lg-hover"
-                                 style="width: 150px;">
+                                 style="width: 100px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
                                     <span class="d-block mb-1">USSD</span>
@@ -444,10 +405,10 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="px-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="1400" data-aos-duration="1000">
+                        <div class="px-2" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-delay="700" data-aos-duration="1000">
                             <img v-lazy="'img/icons/common/chatbot.svg'"
                                  class="img-center img-fluid shadow-lg-hover"
-                                 style="width: 150px;">
+                                 style="width: 100px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
                                     <span class="d-block mb-1">Chat Bot</span>
@@ -459,6 +420,7 @@
                 </div>
             </div>
         </section>
+        
 
     </div>
 </template>

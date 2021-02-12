@@ -13,20 +13,19 @@
                     class="border-0">
                 <template>
                     <div class="text-center text-muted mb-4">
-                        <small>Buy Airtime</small>
+                        <small>Quick Topup</small>
                     </div>
-                    <form role="form">
+                    <form role="form input-group">
                         <base-input alternative
                                     class="mb-3"
                                     placeholder="Phone number"
                                     addon-left-icon="ni ni-phone">
                         </base-input>
-                        <base-input alternative
-                                    class="mb-3"
-                                    type="select"
-                                    placeholder="Network"
-                                    addon-left-icon="ni ni-phone">
-                        </base-input>
+                        <select class="form-control mb-3" placeholder="Network">
+                          <option>MTN</option>
+                          <option>Airtel</option>
+                          <option>Glo</option>
+                        </select>
                         <base-input alternative
                                     type="number"
                                     placeholder="Amount"

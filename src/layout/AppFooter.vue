@@ -2,12 +2,12 @@
     <footer class="footer has-cards">
         <div class="container container-lg">
             <section class="section section-lg pt-0">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                 <card gradient="primary"
                       no-body
                       shadow-size="lg"
                       class="border-0 floating"
-                      data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                      >
                     <div class="p-5">
                         <div class="row align-items-center">
                             <div class="col-lg-8">

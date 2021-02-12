@@ -101,10 +101,8 @@
 
 
 .airtime-slide, .electricity-slide, .cable-slide, .fund-slide {
-  padding: 25% 0;
+  padding: 20% 0;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .airtime-slide {
@@ -117,13 +115,13 @@
   background-image: url("../../../public/img/theme/cable.png");
 }
 .fund-slide {
-  background-image: url("../../../public/img/theme/wallet.png");
+  background: #f4f5f7;
 }
 .footer-bg {
   background-color: $footer-bg;
 }
 .slide {
-  padding: 8vh 0px;
+  padding: 9vh 0px;
 }
 .nav-link-inner--text {
   color: $default !important;
