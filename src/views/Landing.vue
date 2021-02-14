@@ -43,9 +43,9 @@
                                             </div>
                                         </div>
                                         <div class="d-flex mt-4">
-                                            <img src="img/theme/playstore.svg" class="img-fluid">
-                                            <img src="img/theme/appstore.svg" class="img-fluid mx-3">
-                                            <img src="img/theme/code.svg" class="img-fluid">
+                                            <img src="img/theme/playstore.svg" class="img-fluid" width="100px">
+                                            <img src="img/theme/appstore.svg" class="img-fluid mx-3" width="100px">
+                                            <img src="img/theme/code.svg" class="img-fluid" width="100px">
                                         </div>
                                     </div>
                                     <div class="col-md-5 col-12 mb-5 floating pl-5" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
@@ -253,7 +253,7 @@
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6">
                         <div class="card bg-light shadow border-0">
-                            <code>
+                            <!-- <code>
                               <pre>
                                    # import package
                                     import africastalking
@@ -272,7 +272,7 @@
 
                                     print(response)
                               </pre>
-                            </code>
+                            </code> -->
                             <blockquote class="card-blockquote">
                                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
                                      class="svg-bg">

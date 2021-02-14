@@ -18,12 +18,17 @@
             </div>
 
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-inner--text" href="https://www.instagram.com/creativetimofficial"
+                       target="_blank" rel="noopener" data-toggle="tooltip">
+                        Enterprise
+                    </a>
+                </li>
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link nav-link-icon" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text">Products</span>
                     </a>
-                    <router-link to="/component" class="dropdown-item">Enterprise</router-link>
                     <router-link to="/component" class="dropdown-item">Custom Page</router-link>
                     <router-link to="/component" class="dropdown-item">Mobile</router-link>
                     <router-link to="/component" class="dropdown-item">USSD</router-link>
@@ -32,13 +37,13 @@
                 </base-dropdown>
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link nav-link-icon" data-toggle="dropdown" role="button">
-                        <i class="ni ni-ui-04 d-lg-none"></i>
-                        <span class="nav-link-inner--text">TopUp Now</span>
+                        <i class="ni ni-collection d-lg-none"></i>
+                        <span class="nav-link-inner--text">Use Cases</span>
                     </a>
-                    <router-link to="/component" class="dropdown-item">Airtime</router-link>
-                    <router-link to="/component" class="dropdown-item">Electricity</router-link>
-                    <router-link to="/component" class="dropdown-item">Cable</router-link>
-                    <router-link to="/component" class="dropdown-item">Fund Wallet</router-link>
+                    <router-link to="/component" class="dropdown-item">Businesses</router-link>
+                    <router-link to="/component" class="dropdown-item">Merchants</router-link>
+                    <router-link to="/component" class="dropdown-item">Resellers</router-link>
+                    <router-link to="/component" class="dropdown-item">Banks</router-link>
                 </base-dropdown>
                 <li class="nav-item">
                     <router-link to="/landing" class="nav-link nav-link-inner--text">Pricing</router-link>
@@ -47,15 +52,6 @@
                     <a class="nav-link nav-link-inner--text" href="https://www.instagram.com/creativetimofficial"
                        target="_blank" rel="noopener" data-toggle="tooltip">
                         Developers
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/landing" class="nav-link nav-link-inner--text">Use Cases</router-link>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-inner--text" href="https://github.com/creativetimofficial/vue-argon-design-system"
-                       target="_blank" rel="noopener" data-toggle="tooltip">
-                        Learn
                     </a>
                 </li>
                 <li class="nav-item d-none d-lg-block ml-lg-4">

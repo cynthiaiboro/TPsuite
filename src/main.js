@@ -20,11 +20,12 @@ import App from "./App.vue";
 import router from "./router";
 import Argon from "./plugins/argon-kit";
 import AOS from 'aos';
-import VueCodeHighlight from 'vue-code-highlight';
 import 'aos/dist/aos.css'; 
 import './registerServiceWorker'
+import Axios from './plugins/axios'
 
-Vue.use(VueCodeHighlight) //registers the v-highlight directive
+Vue.prototype.$http = Axios;
+
 Vue.config.productionTip = false;
 Vue.use(Argon);
 AOS.init(); 
