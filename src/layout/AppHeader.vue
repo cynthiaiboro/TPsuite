@@ -19,15 +19,12 @@
 
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-inner--text" href="https://www.instagram.com/creativetimofficial"
-                       target="_blank" rel="noopener" data-toggle="tooltip">
-                        Enterprise
-                    </a>
+                    <router-link to="/enterprise" class="nav-link nav-link-inner--text text-default">Enterprise</router-link>
                 </li>
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link nav-link-icon" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text">Products</span>
+                        <span class="nav-link-inner--text text-default">Products</span>
                     </a>
                     <router-link to="/component" class="dropdown-item">Custom Page</router-link>
                     <router-link to="/component" class="dropdown-item">Mobile</router-link>
@@ -38,7 +35,7 @@
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link nav-link-icon" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text">Use Cases</span>
+                        <span class="nav-link-inner--text text-default">Use Cases</span>
                     </a>
                     <router-link to="/component" class="dropdown-item">Businesses</router-link>
                     <router-link to="/component" class="dropdown-item">Merchants</router-link>
@@ -46,10 +43,10 @@
                     <router-link to="/component" class="dropdown-item">Banks</router-link>
                 </base-dropdown>
                 <li class="nav-item">
-                    <router-link to="/landing" class="nav-link nav-link-inner--text">Pricing</router-link>
+                    <router-link to="/landing" class="nav-link nav-link-inner--text text-default">Pricing</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-inner--text" href="https://www.instagram.com/creativetimofficial"
+                    <a class="nav-link nav-link-inner--text text-default" href="https://www.instagram.com/creativetimofficial"
                        target="_blank" rel="noopener" data-toggle="tooltip">
                         Developers
                     </a>

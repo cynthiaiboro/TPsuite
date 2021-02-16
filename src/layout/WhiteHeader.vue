@@ -1,9 +1,9 @@
 <template>
     <div>
         <header class="header-global">
-        <base-nav class="navbar-main shadow" transparent type="" id="navigation" effect="light" expand>
+        <base-nav class="navbar-main" transparent type="" effect="light" expand>
             <router-link slot="brand" class="" to="/">
-                <img src="img/brand/blue-logo.png" alt="logo" class="img-fluid" width="180px">
+                <img src="img/brand/white-logo.png" alt="logo" class="img-fluid" width="180px">
             </router-link>
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
@@ -19,12 +19,12 @@
 
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
-                    <router-link to="/enterprise" class="nav-link nav-link-inner--text text-default">Enterprise</router-link>
+                    <router-link to="/enterprise" class="nav-link nav-link-inner--text text-white">Enterprise</router-link>
                 </li>
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link nav-link-icon" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text text-default">Products</span>
+                        <span class="nav-link-inner--text text-white">Products</span>
                     </a>
                     <router-link to="/component" class="dropdown-item">Custom Page</router-link>
                     <router-link to="/component" class="dropdown-item">Mobile</router-link>
@@ -35,7 +35,7 @@
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link nav-link-icon" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text text-default">Use Cases</span>
+                        <span class="nav-link-inner--text">Use Cases</span>
                     </a>
                     <router-link to="/component" class="dropdown-item">Businesses</router-link>
                     <router-link to="/component" class="dropdown-item">Merchants</router-link>
@@ -43,10 +43,10 @@
                     <router-link to="/component" class="dropdown-item">Banks</router-link>
                 </base-dropdown>
                 <li class="nav-item">
-                    <router-link to="/landing" class="nav-link nav-link-inner--text text-default">Pricing</router-link>
+                    <router-link to="/landing" class="nav-link nav-link-inner--text">Pricing</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-inner--text text-default" href="https://www.instagram.com/creativetimofficial"
+                    <a class="nav-link nav-link-inner--text" href="https://www.instagram.com/creativetimofficial"
                        target="_blank" rel="noopener" data-toggle="tooltip">
                         Developers
                     </a>
@@ -70,17 +70,12 @@ import BaseDropdown from "@/components/BaseDropdown";
 import CloseButton from "@/components/CloseButton";
 
 export default {
-  components: {
-    BaseNav,
-    CloseButton,
-    BaseDropdown
-  }
+    components: {
+        BaseNav,
+        CloseButton,
+        BaseDropdown
+    }
 };
 </script>
-
-<style scoped>
-#navigation {
-    position: fixed;
-    background-color: #fff !important;
-}
+<style>
 </style>

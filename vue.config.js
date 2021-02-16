@@ -9,6 +9,9 @@ module.exports = {
       })
     ]
   },
+  // devServer: {
+  //   proxy: 'https://dev.topupbox.com'
+  // },
   pwa: {
     name: 'Vue Argon Design',
     themeColor: '#172b4d',

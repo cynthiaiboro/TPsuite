@@ -1,8 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import AppHeader from "./layout/AppHeader";
+import WhiteHeader from "./layout/WhiteHeader";
 import AppFooter from "./layout/AppFooter";
-import Components from "./views/Components.vue";
+import Enterprise from "./views/Enterprise.vue";
 import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
@@ -23,11 +24,11 @@ export default new Router({
       }
     },
     {
-      path: "/landing",
-      name: "components",
+      path: "/enterprise",
+      name: "enterprise",
       components: {
-        header: AppHeader,
-        default: Components,
+        header: WhiteHeader,
+        default: Enterprise,
         footer: AppFooter
       }
     },

@@ -16,32 +16,20 @@
                     <span></span>
                 </div>
                 <div class="py-5">
-                    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div id="myCarousel" class="carousel carousel-fade" data-ride="carousel">
                         <b-carousel id="carousel1"
                                 :interval="4000"
                                 controls
                                 fade>
                         <!-- Text slides with image -->
-                        <!-- <b-carousel-slide> -->
+                        <!-- <b-carousel-slide class="slide py-5"> -->
                             <div class="container">
                                 <div class="row mb-5">
                                     <div class="col-md-7 col-12 mt-5">
                                         <h4 class="text-default" data-aos="fade-right" data-aos-delay="800" data-aos-easing="ease-out-cubic" data-aos-duration="1000">PAYMENTS MADE EASY</h4>
                                         <p  class="text-default" data-aos="fade-right" data-aos-delay="1100" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Buy airtime, pay for your cable and clectricity bills and fund your wallet with our topup quick service.
                                            All at a go and make direct payment instantly. It's just too easy.</p>
-                                        <div class="row mt-5" >
-                                            <div class="col-md-8 col-12" data-aos-delay="1400" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                                                <base-input alternative
-                                                placeholder="Phone number"
-                                                type="number"
-                                                addon-left-icon="fa fa-phone"
-                                                >
-                                                </base-input>
-                                            </div>
-                                            <div class="col-md-4 col-12">
-                                                <airtime-modal />
-                                            </div>
-                                        </div>
+                                        <airtime-modal />
                                         <div class="d-flex mt-4">
                                             <img src="img/theme/playstore.svg" class="img-fluid" width="100px">
                                             <img src="img/theme/appstore.svg" class="img-fluid mx-3" width="100px">
@@ -55,50 +43,65 @@
                                 
                             </div>
                         <!-- </b-carousel-slide> -->
-                        <!-- <b-carousel-slide >
+                        <!-- <b-carousel-slide class="slide py-5">
                             <div class="container">
-                                <div class="row mb-5">
-                                    <div class="col-md-7 col-12 mt-5 order-md-1 order-2">
-                                        <h4 class="text-default">CABLE</h4>
-                                        <p  class="text-default">With our simplified payment, subscribe to your favourite cable station.
-                                          Fill in your cable number and you're good to go.</p>
-                                        <div class="row mt-5">
-                                            <div class="col-md-8 col-12">
-                                                <base-input alternative
-                                                placeholder="Cable number"
-                                                type="number"
-                                                addon-left-icon="fa fa-phone"
-                                                >
-                                                </base-input>
-                                            </div>
-                                            <div class="col-md-4 col-12">
-                                                <airtime-modal />
-                                            </div>
+                                <div class="row row-grid justify-content-between">
+                                    <div class="col-lg-6 mt-lg-5">
+                                        <h3 class="display-3 text-default">OUR B2B SERVICES
+                                            <span class="text-default">Integration for businessess</span>
+                                        </h3>
+                                        <p class="lead text-default">With our Merchant and Enterprise platforms using our well-detailed API documentation,
+                                            you can integrate airtime purchase for vending credit and data for all telecomms.</p>
+                                        <div class="btn-wrapper">
+                                            <router-link to="/login" class="btn btn-primary">
+                                                Learn more
+                                            </router-link>
                                         </div>
                                     </div>
-                                    <div class="col-md-5 col-12 mb-5 pl-5">
-                                        <img src="img/theme/why-us.png" class="mx-auto" alt="slide">
+                                    <div class="col-lg-5 mb-lg-auto">
+                                        <div class="transform-perspective-right">
+                                            <card gradient="secondary floating" shadow body-classes="p-lg-5">
+                                                <small class="mb-1 text-default text-center text-muted" >Want to work with us?</small>
+                                                <base-input class="mt-4"
+                                                            alternative
+                                                            placeholder="Your name"
+                                                            addon-left-icon="ni ni-user-run">
+                                                </base-input>
+                                                <base-input alternative
+                                                            placeholder="Email address"
+                                                            addon-left-icon="ni ni-email-83">
+                                                </base-input>
+                                                <base-input class="mb-4">
+                                                        <textarea class="form-control form-control-alternative" name="name" rows="4"
+                                                                cols="80" placeholder="Type a message..."></textarea>
+                                                </base-input>
+                                                <base-button type="default" round block size="lg">
+                                                    Send Message
+                                                </base-button>
+                                            </card>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </b-carousel-slide> -->
+
                         </b-carousel>
                     </div>
                 </div>
             </section>
             <!-- 1st Hero Variation -->
         </div>
-        <section class="section section-lg pt-lg-0 mt--200">
+        <section class="section section-lg pt-lg-0">
             <div class="container">
-                <!-- <div class="text-center justify-content-center">
-                    <div class="col-lg-10">
-                        <h2 class="display-3 text-white">Our Products</h2>
+                <div class="text-center justify-content-center">
+                    <div class="col-lg-12">
+                        <h2 class="display-3 text-default">Our Products</h2>
                         <p class="lead mb-5">We offer a wide range of products and services.</p>
                     </div>
-                </div> -->
+                </div>
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-12">
-                        <div class="row row-grid" data-aos="fade-up" data-aos-delay="2000" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                        <div class="row row-grid" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                             <div class="col-lg-4">
                                 <card class="border-0" hover shadow body-classes="py-5 text-center">
                                     <icon name="ni ni-check-bold" size="lg" type="primary" shadow class="mb-4">
@@ -253,7 +256,7 @@
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6">
                         <div class="card bg-light shadow border-0">
-                            <!-- <code>
+                            <code>
                               <pre>
                                    # import package
                                     import africastalking
@@ -272,7 +275,7 @@
 
                                     print(response)
                               </pre>
-                            </code> -->
+                            </code>
                             <blockquote class="card-blockquote">
                                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
                                      class="svg-bg">
