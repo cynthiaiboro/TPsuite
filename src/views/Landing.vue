@@ -22,68 +22,46 @@
                                 controls
                                 fade>
                         <!-- Text slides with image -->
-                        <!-- <b-carousel-slide class="slide py-5"> -->
+                        <b-carousel-slide class="slide py-5">
                             <div class="container">
                                 <div class="row mb-5">
-                                    <div class="col-md-7 col-12 mt-5">
-                                        <h4 class="text-default" data-aos="fade-right" data-aos-delay="800" data-aos-easing="ease-out-cubic" data-aos-duration="1000">PAYMENTS MADE EASY</h4>
-                                        <p  class="text-default" data-aos="fade-right" data-aos-delay="1100" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Buy airtime, pay for your cable and clectricity bills and fund your wallet with our topup quick service.
+                                    <div class="col-md-8 col-12 mt-5">
+                                        <h4 class="text-dark" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">PAYMENTS MADE EASY</h4>
+                                        <p  class="text-dark" data-aos="fade-left" data-aos-delay="1100" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Buy airtime, pay for your cable and clectricity bills and fund your wallet with our topup quick service.
                                            All at a go and make direct payment instantly. It's just too easy.</p>
                                         <airtime-modal />
                                         <div class="d-flex mt-4">
-                                            <img src="img/theme/playstore.svg" class="img-fluid" width="100px">
-                                            <img src="img/theme/appstore.svg" class="img-fluid mx-3" width="100px">
-                                            <img src="img/theme/code.svg" class="img-fluid" width="100px">
+                                            <img src="img/theme/playstore.png" class="img-fluid" width="150px">
+                                            <img src="img/theme/appstore.png" class="img-fluid mx-2" width="150px">
+                                            <img src="img/theme/code.svg" class="img-fluid" width="150px">
                                         </div>
                                     </div>
-                                    <div class="col-md-5 col-12 mb-5 floating pl-5" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                                    <div class="col-md-4 col-12 mb-5 floating pl-5" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                                         <img src="img/theme/airtime-hero.png" class="mx-auto" alt="slide">
                                     </div>
                                 </div>
                                 
                             </div>
-                        <!-- </b-carousel-slide> -->
-                        <!-- <b-carousel-slide class="slide py-5">
+                        </b-carousel-slide>
+                        <b-carousel-slide class="slide py-5">
                             <div class="container">
                                 <div class="row row-grid justify-content-between">
-                                    <div class="col-lg-6 mt-lg-5">
-                                        <h3 class="display-3 text-default">OUR B2B SERVICES
-                                            <span class="text-default">Integration for businessess</span>
+                                    <div class="col-lg-8">
+                                        <h3 class="display-3 text-dark">OUR B2B SERVICES
+                                            <span class="text-dark">Integration for businessess</span>
                                         </h3>
-                                        <p class="lead text-default">With our Merchant and Enterprise platforms using our well-detailed API documentation,
+                                        <p class="lead text-dark">With our Merchant and Enterprise platforms using our well-detailed API documentation,
                                             you can integrate airtime purchase for vending credit and data for all telecomms.</p>
-                                        <div class="btn-wrapper">
-                                            <router-link to="/login" class="btn btn-primary">
-                                                Learn more
-                                            </router-link>
-                                        </div>
+                                        <contact-modal />
                                     </div>
-                                    <div class="col-lg-5 mb-lg-auto">
-                                        <div class="transform-perspective-right">
-                                            <card gradient="secondary floating" shadow body-classes="p-lg-5">
-                                                <small class="mb-1 text-default text-center text-muted" >Want to work with us?</small>
-                                                <base-input class="mt-4"
-                                                            alternative
-                                                            placeholder="Your name"
-                                                            addon-left-icon="ni ni-user-run">
-                                                </base-input>
-                                                <base-input alternative
-                                                            placeholder="Email address"
-                                                            addon-left-icon="ni ni-email-83">
-                                                </base-input>
-                                                <base-input class="mb-4">
-                                                        <textarea class="form-control form-control-alternative" name="name" rows="4"
-                                                                cols="80" placeholder="Type a message..."></textarea>
-                                                </base-input>
-                                                <base-button type="default" round block size="lg">
-                                                    Send Message
-                                                </base-button>
-                                            </card>
+                                    <div class="col-lg-4 col-12 my-5">
+                                        <div class="transform-perspective-left">
+                                            <img src="img/theme/phone.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </b-carousel-slide> -->
+                        </b-carousel-slide>
 
                         </b-carousel>
                     </div>
@@ -95,7 +73,7 @@
             <div class="container">
                 <div class="text-center justify-content-center">
                     <div class="col-lg-12">
-                        <h2 class="display-3 text-default">Our Products</h2>
+                        <h2 class="display-3 text-dark">Our Products</h2>
                         <p class="lead mb-5">We offer a wide range of products and services.</p>
                     </div>
                 </div>
@@ -106,7 +84,7 @@
                                 <card class="border-0" hover shadow body-classes="py-5 text-center">
                                     <icon name="ni ni-check-bold" size="lg" type="primary" shadow class="mb-4">
                                     </icon>
-                                    <h6 class="text-primary text-uppercase">Enterprise</h6>
+                                    <h6 class="text-dark text-uppercase">Enterprise</h6>
                                     <p class="description mt-3">Let your customers experience the very best. Register as a merchant to begin</p>
                                     <base-button tag="a" href="#" type="primary" class="mt-4">
                                         Learn more
@@ -117,8 +95,8 @@
                                 <card class="border-0" hover shadow body-classes="py-5 text-center">
                                     <icon name="ni ni-istanbul" size="lg" type="primary" shadow class="mb-4">
                                     </icon>
-                                    <h6 class="text-primary text-uppercase">Custom Page</h6>
-                                    <p class="description mt-3">Engage easily and effectively with your customers through our messaging feature.</p>
+                                    <h6 class="text-dark text-uppercase">Custom Page</h6>
+                                    <p class="description mt-3">Engage easily and effectively with your customers through our custom page</p>
                                     <base-button tag="a" href="#" type="primary" class="mt-4">
                                         Learn more
                                     </base-button>
@@ -128,8 +106,8 @@
                                 <card class="border-0" hover shadow body-classes="py-5 text-center">
                                     <icon name="ni ni-planet" size="lg" type="primary" shadow class="mb-4">
                                     </icon>
-                                    <h6 class="text-primary text-uppercase">Mobile</h6>
-                                    <p class="description mt-3">Available on mobile devices. Andriod and IOS inclusive.</p>
+                                    <h6 class="text-dark text-uppercase">Mobile</h6>
+                                    <p class="description mt-3">Available on mobile devices. Andriod and IOS inclusive</p>
                                     <base-button tag="a" href="#" type="primary" class="mt-4">
                                         Learn more
                                     </base-button>
@@ -145,7 +123,7 @@
                                 <card class="border-0" hover shadow body-classes="py-5 text-center">
                                     <icon name="ni ni-check-bold" size="lg" type="primary" shadow class="mb-4">
                                     </icon>
-                                    <h6 class="text-primary text-uppercase">USSD</h6>
+                                    <h6 class="text-dark text-uppercase">USSD</h6>
                                     <p class="description mt-3">Easy steps and no internet required. Simply dial *347*76#</p>
                                     <base-button tag="a" href="#" type="primary" class="mt-4">
                                         Learn more
@@ -156,8 +134,8 @@
                                 <card class="border-0" hover shadow body-classes="py-5 text-center">
                                     <icon name="ni ni-istanbul" size="lg" type="primary" shadow class="mb-4">
                                     </icon>
-                                    <h6 class="text-primary text-uppercase">Unicard</h6>
-                                    <p class="description mt-3">Engage easily and effectively with your customers through feature.</p>
+                                    <h6 class="text-dark text-uppercase">Unicard</h6>
+                                    <p class="description mt-3">Print unique pins across all networks in real-time</p>
                                     <base-button tag="a" href="#" type="primary" class="mt-4">
                                         Learn more
                                     </base-button>
@@ -167,8 +145,8 @@
                                 <card class="border-0" hover shadow body-classes="py-5 text-center">
                                     <icon name="ni ni-planet" size="lg" type="primary" shadow class="mb-4">
                                     </icon>
-                                    <h6 class="text-primary text-uppercase">API</h6>
-                                    <p class="description mt-3">We provide APIs for simple Integration into your own apllication.</p>
+                                    <h6 class="text-dark text-uppercase">API</h6>
+                                    <p class="description mt-3">We provide APIs for simple Integration into your own apllication</p>
                                     <base-button tag="a" href="#" type="primary" class="mt-4">
                                         Learn more
                                     </base-button>
@@ -251,49 +229,49 @@
                 </div>
             </div>
         </section>
-        <section class="section bg-secondary">
+        <section class="section bg-light-blue">
             <div class="container">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6">
-                        <div class="card bg-light shadow border-0">
-                            <code>
-                              <pre>
-                                   # import package
-                                    import africastalking
+                        <div class="card bg-default shadow text-white border-0 py-5">
+            <code>
+                <pre>
+                    # import package
+                    import topupbox
 
-                                    #initialize SDK
-                                    username = "YOUR_USERNAME"
+                    #initialize SDK
+                    username = "YOUR_USERNAME"
 
-                                    # Initialize a service e.g. airtime
-                                    airtime = africastalking.AIRTIME
+                    # Initialize a service e.g. airtime
+                    airtime = topupbox.AIRTIME
 
-                                    # Use the service synchronously
-                                    response = airtime.send([{
-                                        phoneNumber: "+2547XXXXXXXX",
-                                        amount: "KES 200"
-                                    }])
+                    # Use the service synchronously
+                    response = airtime.send([{
+                        beneficiary: "+2547XXXXXXXX",
+                        amount: "200"
+                    }])
 
-                                    print(response)
-                              </pre>
-                            </code>
-                            <blockquote class="card-blockquote">
+                    print(response)
+                </pre>
+            </code>
+                            <!-- <blockquote class="card-blockquote">
                                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
                                      class="svg-bg">
                                     <polygon points="0,52 583,95 0,95" class="fill-default"></polygon>
                                     <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"></polygon>
                                 </svg>
 
-                            </blockquote>
+                            </blockquote> -->
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="pl-md-5">
-                            <icon name="ni ni-settings" class="mb-5" size="lg" type="default" shadow rounded></icon>
+                            <icon name="ni ni-settings" class="mb-4" size="lg" type="default" shadow rounded></icon>
 
                             <h3>Learn and Build</h3>
                             <p class="lead">Developers' Guide</p>
                             <p>We have documented a set of developer tools that will make it easier for you to learn how to work with our APIs. These resources will help you build faster and test your applications before you deploy them to your users.</p>
-                            <base-button tag="a" href="#" type="default" class="mt-4">
+                            <base-button tag="a" href="#" type="default" class="mt-3">
                                 Learn more
                             </base-button>
                         </div>
@@ -303,7 +281,7 @@
         </section>
 
         <section class="section section section-shaped my-0 overflow-hidden">
-            <div class="shape shape-style-1 bg-gradient-primary shape-skew">
+            <div class="shape shape-style-1 bg-gradient-default shape-skew">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -336,9 +314,9 @@
                                           rounded></icon>
                                 </div>
                                 <div class="pl-4">
-                                    <h5 class="title text-primary">Innovation</h5>
+                                    <h5 class="title text-dark">Innovation</h5>
                                     <p>Goes to the core of providing the best possible solutions always – produce new technology.</p>
-                                    <a href="#" class="text-primary">Learn more</a>
+                                    <a href="#" class="text-dark">Learn more</a>
                                 </div>
                             </div>
                         </card>
@@ -349,9 +327,9 @@
                                           rounded></icon>
                                 </div>
                                 <div class="pl-4">
-                                    <h5 class="title text-primary">Integrity</h5>
+                                    <h5 class="title text-dark">Integrity</h5>
                                     <p>Encompasses honesty, truthfulness, reliability and honour. We strive to ensure easy accessibility and be very accommodative.</p>
-                                    <a href="#" class="text-primary">Learn more</a>
+                                    <a href="#" class="text-dark">Learn more</a>
                                 </div>
                             </div>
                         </card>
@@ -433,6 +411,7 @@ import StickyNav from '../layout/StickyHeader';
 import { BCarousel } from "bootstrap-vue/esm/components/carousel/carousel";
 import { BCarouselSlide } from "bootstrap-vue/esm/components/carousel/carousel-slide";
 import AirtimeModal from './components/TopupBox/AirtimeModal.vue';
+import ContactModal from './components/TopupBox/ContactModal.vue';
 
 export default {
   name: "home",
@@ -441,6 +420,7 @@ export default {
     BCarouselSlide,
     StickyNav,
     AirtimeModal,
+    ContactModal
   },
   data() {
         return {

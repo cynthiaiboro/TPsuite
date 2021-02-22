@@ -17,7 +17,7 @@
 
             <modal :show.sync="modals.modal3"
                     body-classes="p-0"
-                    modal-classes="modal modal-dialog-centered modal-sm">
+                    modal-classes="modal modal-dialog-centered modal-sm h-100vh">
                 <card type="secondary" shadow
                         header-classes="bg-white pb-5"
                         body-classes="px-lg-5 py-lg-5"
@@ -69,6 +69,7 @@ import Modal from "@/components/Modal.vue";
 import paystack from 'vue-paystack';
 
 export default {
+  name: "airtime-modal",
   components: {
     Modal,
     paystack

@@ -17,7 +17,7 @@
     .footer-text-link {
         font-size: 14px;
         font-weight: 600;
-        color: $default;
+        color: $dark;
     }
 
     .nav .nav-item .nav-link,
@@ -52,6 +52,7 @@
 }
 .footer-header {
     font-weight: 800;
+    color: $dark;
 }
 .footer.has-cards {
     overflow: hidden;
@@ -68,7 +69,7 @@
         right: 0;
         top: 600px;
         height: 2000px;
-        background: theme-color("secondary");
+        background: $light-blue !important;
         transform: skew(0,-8deg);
     }
 

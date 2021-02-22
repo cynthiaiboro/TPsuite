@@ -26,24 +26,24 @@
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text text-default">Products</span>
                     </a>
-                    <router-link to="/component" class="dropdown-item">Custom Page</router-link>
-                    <router-link to="/component" class="dropdown-item">Mobile</router-link>
-                    <router-link to="/component" class="dropdown-item">USSD</router-link>
-                    <router-link to="/component" class="dropdown-item">Unicard</router-link>
-                    <router-link to="/component" class="dropdown-item">API</router-link>
+                    <router-link to="/custom" class="dropdown-item">Custom Page</router-link>
+                    <router-link to="/mobile" class="dropdown-item">Mobile</router-link>
+                    <router-link to="/ussd" class="dropdown-item">USSD</router-link>
+                    <router-link to="/unicard" class="dropdown-item">Unicard</router-link>
+                    <router-link to="/api" class="dropdown-item">API</router-link>
                 </base-dropdown>
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link nav-link-icon" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text text-default">Use Cases</span>
                     </a>
-                    <router-link to="/component" class="dropdown-item">Businesses</router-link>
-                    <router-link to="/component" class="dropdown-item">Merchants</router-link>
-                    <router-link to="/component" class="dropdown-item">Resellers</router-link>
-                    <router-link to="/component" class="dropdown-item">Banks</router-link>
+                    <router-link to="/business" class="dropdown-item">Businesses</router-link>
+                    <router-link to="/merchants" class="dropdown-item">Merchants</router-link>
+                    <router-link to="/resellers" class="dropdown-item">Resellers</router-link>
+                    <router-link to="/banks" class="dropdown-item">Banks</router-link>
                 </base-dropdown>
                 <li class="nav-item">
-                    <router-link to="/landing" class="nav-link nav-link-inner--text text-default">Pricing</router-link>
+                    <router-link to="/pricing" class="nav-link nav-link-inner--text text-default">Pricing</router-link>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-inner--text text-default" href="https://www.instagram.com/creativetimofficial"
@@ -52,12 +52,11 @@
                     </a>
                 </li>
                 <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <a href="https://www.creative-tim.com/product/vue-argon-design-system" target="_blank" rel="noopener"
-                       class="btn btn-neutral btn-icon">
+                    <router-link to="/register" class="btn btn-default btn-icon">
                     <span class="btn-inner--icon">
                     </span>
                         <span class="">Get Started</span>
-                    </a>
+                    </router-link>
                 </li>
             </ul>
         </base-nav>

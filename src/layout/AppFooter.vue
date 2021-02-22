@@ -2,8 +2,8 @@
     <footer class="footer has-cards">
         <div class="container container-lg">
             <section class="section section-lg pt-0">
-            <div class="container" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                <card gradient="primary"
+            <div class="container">
+                <card gradient="default"
                       no-body
                       shadow-size="lg"
                       class="border-0 floating"
@@ -35,14 +35,19 @@
                         <router-link slot="brand" class="mr-lg-5" to="/">
                             <img src="img/brand/blue-logo.png" alt="logo" class="img-fluid" width="180px">
                         </router-link>
+                        <p class="mt-4 pr-md-3 footer-text-link">
+                            163B Sinari Danajiro Str, <br>
+                            Victoria Island, <br>
+                            Lagos, Nigeria.
+                        </p>
                     
-                        <div class="mt-4">
-                            <base-button tag="a" href="#" icon="fa fa-twitter" rounded
-                                icon-only></base-button>
-                            <base-button tag="a" href="#" icon="fa fa-facebook" rounded
-                                icon-only></base-button>
-                            <base-button tag="a" href="#" icon="fa fa-instagram" rounded
-                                icon-only></base-button>
+                        <div class="mt-1">
+                            <i class="fa fa-twitter footer-text-link" style="font-size: 16px">
+                            </i>
+                            <i class="fa fa-facebook mx-4 footer-text-link" style="font-size: 16px">
+                            </i>
+                            <i class="fa fa-instagram footer-text-link" style="font-size: 16px">
+                            </i>
                         </div>
 
 
@@ -55,22 +60,22 @@
                             <span>PRODUCTS</span>
                             </h6>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">USSD</router-link>
+                            <router-link to="/enterprise" class="footer-text-link">Enterprise</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Enterprise</router-link>
+                            <router-link to="/custom" class="footer-text-link">Custom Page</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Custom Page</router-link>
+                            <router-link to="/ussd" class="footer-text-link">USSD</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Mobile</router-link>
+                            <router-link to="/mobile" class="footer-text-link">Mobile</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Unicard</router-link>
+                            <router-link to="/unicard" class="footer-text-link">Unicard</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">API</router-link>
+                            <router-link to="/api" class="footer-text-link">API</router-link>
                             </p>
                             
 
@@ -80,22 +85,22 @@
                             <span>RESOURCES</span>
                             </h6>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Pricing</router-link>
+                            <router-link to="/pricing" class="footer-text-link">Pricing</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Use Cases</router-link>
+                            <a href="" class="footer-text-link" target="blank">Developers</a>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Developers</router-link>
+                            <router-link to="/business" class="footer-text-link">Businesses</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Learn</router-link>
+                            <router-link to="/merchants" class="footer-text-link">Merchants</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">FAQs </router-link>
+                            <router-link to="/resellers" class="footer-text-link">Resellers</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Contact US</router-link>
+                            <router-link to="/banks" class="footer-text-link">Banks</router-link>
                             </p>
                         </div>
                         </div>
@@ -107,16 +112,19 @@
                             <span>LEGAL</span>
                             </h6>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Terms & Conditions</router-link>
+                            <router-link to="/terms-and-conditions" class="footer-text-link">Terms & Conditions</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Privacy</router-link>
+                            <router-link to="/" class="footer-text-link">Learn</router-link>
                             </p>
                             <p class="my-3">
-                            <router-link to="/" class="footer-text-link">Guidelines</router-link>
+                            <router-link to="/faqs" class="footer-text-link">FAQs</router-link>
+                            </p>
+                            <p class="my-3">
+                            <router-link to="/contact-us" class="footer-text-link">Contact Us</router-link>
                             </p>
                             <p class="my-3 footer-text-link">
-                            support@topupbox.com
+                              support@topupbox.com
                             </p>
                             <p class="my-3 footer-text-link">
                             +234 800 0000 000
@@ -135,7 +143,7 @@
                 <div class="col-md-6">
                     <div class="copyright">
                         &copy; {{year}}
-                        <a href="https://www.creative-tim.com" target="_blank" rel="noopener">TopupBox.</a> All Right Reserved
+                        <a href="https://www.creative-tim.com" target="_blank" rel="noopener" class="text-dark font-weight-bold">TopupBox.</a> All Right Reserved
                     </div>
                 </div>
                 <div class="col-md-6">
