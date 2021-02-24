@@ -67,7 +67,6 @@
 @import "custom/reboot.scss";
 @import "custom/global.scss";
 @import "custom/utilities.scss";
-
 @import "custom/accordion.scss";
 @import "custom/alerts.scss";
 @import "custom/avatars.scss";
@@ -101,10 +100,8 @@
 
 
 .airtime-slide, .electricity-slide, .cable-slide, .fund-slide {
-  padding: 25% 0;
+  padding: 20% 0;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .airtime-slide {
@@ -117,16 +114,15 @@
   background-image: url("../../../public/img/theme/cable.png");
 }
 .fund-slide {
-  background-image: url("../../../public/img/theme/wallet.png");
+  background: #f4f5f7;
 }
 .footer-bg {
   background-color: $footer-bg;
 }
 .slide {
-  padding: 8vh 0px;
+  padding: 12vh 0px;
 }
 .nav-link-inner--text {
-  color: $default !important;
   font-size: 15px !important;
   font-weight: 500 !important;
 }
@@ -162,7 +158,7 @@ input[type=number] {
 #myCarousel .carousel-item a:hover{text-decoration:none;  }
 
 #myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
-#myCarousel .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;} 
+#myCarousel .carousel-item .para{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
 .action-btn{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
 #myCarousel img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; height:auto; max-width:100%;}
 #myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel .carousel-item .mask img{-webkit-animation-duration: 1s;
@@ -173,7 +169,7 @@ input[type=number] {
 #myCarousel .carousel-item{height:100%; min-height:550px; }
 /* #myCarousel{position:relative; z-index:1; background:url(https://i.imgur.com/6axE29k.jpg) center center no-repeat; background-size:cover; } */
 
-.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: $light-blue; }
+.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: $default; }
 
 
 .carousel-item {
@@ -319,4 +315,99 @@ input[type=number] {
   animation-name: slideInRight;
 }
 
+.faq__nav {
+  display: flex;
+  justify-content: space-between;
+  border: none !important;
+  border-radius: 5px;
+  margin-bottom: 2rem !important;
+}
+.accordion {
+  border: none !important;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.faq__nav-item{
+  border-radius: 2rem;
+  border-right: none !important;
+  margin-right: 15px !important;
+  color: $dark;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.faq__nav-item_active {
+  color: $info!important;
+}
+.faq__nav-item:hover {
+  color: $info!important;
+}
+
+.faq__nav-item:last-child {
+  margin-right: none;
+}
+.accordion__title-text {
+  font-weight: $font-weight-bold !important;
+}
+.accordion__title_active {
+  color: $info !important;
+}
+.accordion__title:hover {
+  color: $info !important;
+}
+.accordion__toggle-button_active::before, .accordion__toggle-button_active::after {
+  background: $info !important;
+}
+.accordion__value{
+  padding: 25px !important;
+  text-align: left;
+  color: $default;
+  background-color: $info;
+  margin-bottom: 25px !important;
+  font-size: 14px;
+}
+// .accordion__toggle-button:hover, .accordion__toggle-button:hover{
+//   background: $primary !important;
+// }
+// .accordion__toggle-button[data-v-5d9392b3]::before {
+//   transform: rotate(90deg);
+//   color: lavenderblush;
+// }
+.accordion__toggle-button::before:hover {
+  color: $primary !important;
+}
+.accordion__toggle-button:hover{
+  color: $primary !important;
+}
+
+.hr-primary {
+  border: 0.4px solid $info;
+  background: $info;
+}
+.pricing-card {
+  border: none;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  border-radius: 1rem !important;
+}
+.pricing-card:hover {
+  border-top: 3px solid $info !important;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  transform: scale(1.1);
+  transition: ease-in 0.5s;
+  z-index: 99;
+}
+.telco-table {
+  border: none;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  border-radius: 0.5rem;
+}
+// .modal.show {
+//   background-color: rgba(0, 0, 0, 0.3);
+//   background-size: cover !important;
+//   height: 100vh !important;
+// }
+pre {
+  color: $text-muted !important;
+}
 

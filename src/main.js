@@ -22,6 +22,9 @@ import Argon from "./plugins/argon-kit";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import './registerServiceWorker'
+import Axios from './plugins/axios'
+
+Vue.prototype.$http = Axios;
 
 Vue.config.productionTip = false;
 Vue.use(Argon);
